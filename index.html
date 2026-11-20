@@ -599,11 +599,12 @@
         #education { order: 4; }
         #experience { order: 5; }
         #projects { order: 6; }
-        #certifications { order: 7; }
-        #publications { order: 8; }
-        #awards { order: 9; }
-        #extracurricular { order: 10; }
-        #contact { order: 11; }
+        #open-source { order: 7; }
+        #certifications { order: 8; }
+        #publications { order: 9; }
+        #awards { order: 10; }
+        #extracurricular { order: 11; }
+        #contact { order: 12; }
 
         #bookshelf,
         #languages,
@@ -2371,12 +2372,12 @@
     <aside class="left-rail" aria-label="Profile and section navigation">
         <nav class="side-nav" aria-label="Section navigation">
             <div class="profile-rail" aria-label="Profile summary">
-                <img src="photo1.jpeg" alt="Dharunkumar Senthilkumar"
+                <img src="photo2.jpeg" alt="Dharunkumar Senthilkumar"
                     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Portrait_Placeholder.png/240px-Portrait_Placeholder.png';">
                 <div>
                     <div class="profile-rail-name">Dharunkumar Senthilkumar</div>
                     <div class="profile-rail-role">AI · Mechatronics · Control</div>
-                    <div class="profile-rail-status">Available Dec 2026</div>
+                    <div class="profile-rail-status">Available Jan 2027</div>
                 </div>
             </div>
 
@@ -2387,6 +2388,7 @@
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#open-source">Open Source</a>
         <a href="#certifications">Certifications</a>
         <a href="#publications">Publications</a>
         <a href="#awards">Awards</a>
@@ -2399,7 +2401,7 @@
 
         <header class="header">
             <div class="avatar-wrap">
-                <img class="avatar" src="photo1.jpeg" alt="Dharunkumar Senthilkumar"
+                <img class="avatar" src="photo2.jpeg" alt="Dharunkumar Senthilkumar"
                     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Portrait_Placeholder.png/240px-Portrait_Placeholder.png';">
             </div>
             <h1 class="name">Dharunkumar Senthilkumar</h1>
@@ -2414,7 +2416,7 @@
                 machines. I currently work on <strong>FDM 3D-printer design</strong> at InfinitorAB and
                 insect-wing segmentation and tracking at Chalmers.
                 <br><br>
-                I'm open to full-time engineering roles and can start from <strong>December 2026</strong>.
+                I'm open to full-time engineering roles and can start from <strong>January 2027</strong>.
                 I am currently in Sweden on a <strong>job-seeker visa</strong>, with a long-term goal of
                 working at the intersection of AI and robotics.
             </p>
@@ -2478,20 +2480,38 @@
             <div class="exp-item">
                 <div class="exp-header">
                     <div>
+                        <span class="exp-role">Intern</span>
+                        <span class="exp-company"> · ManoMotion</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-date">Nov 2026 — Dec 2026</span>
+                        <span class="exp-location">Remote · Part-time</span>
+                    </div>
+                </div>
+                <div class="exp-desc">
+                    Currently working on a hand and glove detection project.
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
                         <span class="exp-role">Project Assistant</span>
                         <span class="exp-company"> · Chalmers University of Technology</span>
                     </div>
                     <div class="exp-meta">
                         <span class="exp-date">Jun 2026 — Present</span>
-                        <span class="exp-location">Gothenburg, Sweden · Hybrid</span>
+                        <span class="exp-location">Gothenburg, Sweden · Hybrid · Part-time</span>
                     </div>
                 </div>
                 <div class="exp-desc">
                     <ul>
                         <li>Developing automated insect-wing segmentation and tracking using SAM 2 and RAFT optical
-                            flow.</li>
-                        <li>Investigating wingbeat motion-signal extraction using geometric and pixel-based motion
+                            flow, and extracting wingbeat motion signals using geometric and pixel-based motion
                             metrics.</li>
+                        <li>Extracting the heartbeat of insects and arachnids such as ants and spiders through
+                            computer-vision analysis, combining classical computer vision with optical-flow-based
+                            methods.</li>
                     </ul>
                 </div>
             </div>
@@ -2504,7 +2524,7 @@
                     </div>
                     <div class="exp-meta">
                         <span class="exp-date">Aug 2026 — Present</span>
-                        <span class="exp-location">Hybrid</span>
+                        <span class="exp-location">Hybrid · Part-time</span>
                     </div>
                 </div>
                 <div class="exp-desc">
@@ -2541,7 +2561,7 @@
                     </div>
                     <div class="exp-meta">
                         <span class="exp-date">Dec 2024 — Sep 2025</span>
-                        <span class="exp-location">Gothenburg, Sweden</span>
+                        <span class="exp-location">Gothenburg, Sweden · Part-time</span>
                     </div>
                 </div>
                 <div class="exp-desc">
@@ -2641,6 +2661,40 @@
             <h2 class="section-title"><span class="index">06</span> Projects</h2>
 
             <div class="project-item">
+                <div class="project-title">Video-Guided Dexterous Manipulation</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Converted a recorded human tabletop demonstration into Unitree G1 humanoid motion with an
+                            Inspire five-finger hand in MuJoCo, covering grasp, carry, turn, placement and release.</li>
+                        <li>Built a pipeline of FastHaMeR/MANO hand estimation, object-pose tracking, camera
+                            calibration, arm–waist inverse kinematics, and position control with per-finger contact
+                            feedback.</li>
+                        <li>Verified results with pose, contact and placement checks and an independent replay of the
+                            complete motor stream.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Dharun235/video-guided-dexterous-manipulation"
+                        target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">GulliView — Vision-Based Localization for Autonomous Vehicles</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Working on GulliView, an AprilTag-based position-estimation system for vision-based
+                            localization of autonomous vehicles in the Gulliver project at Chalmers University of
+                            Technology, under the supervision of Elad Schiller.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/5355-ROStig/GulliView"
+                        target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
                 <div class="project-title">Tamil Language Fingerspelling Assistance</div>
                 <div class="project-desc">
                     <ul>
@@ -2724,6 +2778,60 @@
             </div>
         </section>
 
+        <!-- 07 · OPEN SOURCE -->
+        <section class="section" id="open-source">
+            <h2 class="section-title"><span class="index">07</span> Open Source</h2>
+
+            <div class="project-item">
+                <div class="project-title">Vexa — A Beginner-Friendly Language for Computer Vision</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Designed a small language for computer vision whose programs read like the question being asked
+                            (detect person, count person) and are checked for mistakes before they run.</li>
+                        <li>Programs can be interpreted or compiled to Python and run offline on a laptop CPU with local ONNX
+                            models for detection, segmentation, OCR, depth and pose estimation.</li>
+                        <li>Published on PyPI as vexa-language, with a VS Code extension, tutorial and language
+                            reference.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Dharun235/Vexa"
+                        target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">easy-mask</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>No-code desktop tool to draw object masks on images and videos: click an object and AI outlines
+                            it, or draw and paint masks by hand.</li>
+                        <li>Tracks masks through videos with SAM 2 and EfficientTAM, and exports masks, points, COCO and YOLO
+                            datasets. Runs fully offline, with no upload or account.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Dharun235/easy-mask"
+                        target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">ROS 2 Agent</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Goal-driven ROS 2 inspection agent with a web UI, using Ollama for planning and tool search and MCP
+                            to run read-only ROS 2 queries.</li>
+                        <li>Stores run state in SQLite and traces agent runs with Phoenix.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/Dharun235/ros-agent"
+                        target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+        </section>
+
         <!-- 03 · SKILLS -->
         <section class="section" id="skills">
             <h2 class="section-title"><span class="index">03</span> Skills</h2>
@@ -2799,9 +2907,9 @@
             </div>
         </section>
 
-        <!-- 07 · CERTIFICATIONS -->
+        <!-- 08 · CERTIFICATIONS -->
         <section class="section" id="certifications">
-            <h2 class="section-title"><span class="index">07</span> Certifications</h2>
+            <h2 class="section-title"><span class="index">08</span> Certifications</h2>
 
             <div class="cert-item">
                 <img class="cert-image"
@@ -2848,9 +2956,9 @@
             </div>
         </section>
 
-        <!-- 08 · PUBLICATIONS -->
+        <!-- 09 · PUBLICATIONS -->
         <section class="section" id="publications">
-            <h2 class="section-title"><span class="index">08</span> Publications</h2>
+            <h2 class="section-title"><span class="index">09</span> Publications</h2>
 
             <div class="pub-item">
                 <span class="pub-type">Conference Paper</span>
@@ -2870,9 +2978,23 @@
 
         </section>
 
-        <!-- 09 · AWARDS -->
+        <!-- 10 · AWARDS -->
         <section class="section" id="awards">
-            <h2 class="section-title"><span class="index">09</span> Awards</h2>
+            <h2 class="section-title"><span class="index">10</span> Awards</h2>
+
+            <div class="award-item">
+                <div class="award-title">Einride × Chalmers AI Society — The AI Challenge 2026</div>
+                <div class="award-issuer">2nd Place · Team 3</div>
+                <div class="award-date">Nov 2026</div>
+                <div class="award-desc">
+                    Placed 2nd of 4 teams (750 points) in an autonomous mini-truck challenge, where robots mapped
+                    an arena by teleoperation and were then dispatched dock to dock by Einride's Saga AI. Built the
+                    ROS 2 Jazzy driving stack: slam_toolbox mapping, Nav2 with NavFn and MPPI, opennav docking,
+                    Isaac ROS AprilTag detection on a Jetson, and perception for other robots and low obstacles.
+                </div>
+                <a class="award-link" href="https://github.com/einride-labs/ai-powered-autonomous-challenge-chalmers-team-3"
+                    target="_blank" rel="noopener">↗ GitHub repository</a>
+            </div>
 
             <div class="award-item">
                 <div class="award-title">NVIDIA × CAIS × Zenseact BuildClaw Hackathon</div>
@@ -2912,9 +3034,9 @@
             </div>
         </section>
 
-        <!-- 10 · EXTRACURRICULAR -->
+        <!-- 11 · EXTRACURRICULAR -->
         <section class="section" id="extracurricular">
-            <h2 class="section-title"><span class="index">10</span> Extracurricular</h2>
+            <h2 class="section-title"><span class="index">11</span> Extracurricular</h2>
 
             <div class="vol-item">
                 <div class="vol-role">Corporate Host</div>
@@ -3109,9 +3231,9 @@
             </div>
         </section>
 
-        <!-- 11 · CONTACT -->
+        <!-- 12 · CONTACT -->
         <section class="section" id="contact">
-            <h2 class="section-title"><span class="index">11</span> Contact</h2>
+            <h2 class="section-title"><span class="index">12</span> Contact</h2>
             <div class="contact-group">
                 <div class="contact-group-title">Contact details</div>
             <div class="contact-links">
