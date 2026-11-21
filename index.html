@@ -628,13 +628,25 @@
             opacity: 0.9;
         }
 
-        .project-group {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
+        .skills-label.project-group {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.18em;
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid rgba(168, 196, 255, 0.35);
         }
 
-        .section-title + .project-group {
-            margin-top: 0;
+        .skills-label.project-group::before {
+            width: 9px;
+            height: 9px;
+            box-shadow: 0 0 12px #a8c4ff;
+        }
+
+        .section-title + .skills-label.project-group {
+            margin-top: 0.5rem;
         }
 
         .cert-item {
