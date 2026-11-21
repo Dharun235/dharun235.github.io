@@ -628,17 +628,13 @@
             opacity: 0.9;
         }
 
-        .education-thesis {
+        .project-group {
             margin-top: 2.5rem;
+            margin-bottom: 1rem;
         }
 
-        .education-thesis .project-item {
-            margin-top: 1.2rem;
-            margin-bottom: 1.2rem;
-            padding: 1.2rem;
-            border: 1px solid rgba(160, 190, 255, 0.16);
-            border-radius: 12px;
-            background: rgba(10, 17, 38, 0.36);
+        .section-title + .project-group {
+            margin-top: 0;
         }
 
         .cert-item {
@@ -2424,6 +2420,8 @@
         <section class="section" id="experience">
             <h2 class="section-title"><span class="index">04</span> Experience</h2>
 
+            <div class="skills-label project-group">Industry</div>
+
             <div class="exp-item">
                 <div class="exp-header">
                     <div>
@@ -2439,6 +2437,25 @@
                     Currently working on a hand and glove detection project.
                 </div>
             </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div>
+                        <span class="exp-role">Product Development Engineer</span>
+                        <span class="exp-company"> · InfinitorAB</span>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-date">Aug 2026 — Present</span>
+                        <span class="exp-location">Hybrid · Part-time</span>
+                    </div>
+                </div>
+                <div class="exp-desc">
+                    Contributing to the development of InfinitorAB's autonomous FDM 3D printer, focusing on software and
+                    AI integration, electronics, firmware, and motor control.
+                </div>
+            </div>
+
+            <div class="skills-label project-group">Research</div>
 
             <div class="exp-item">
                 <div class="exp-header">
@@ -2460,23 +2477,6 @@
                             computer-vision analysis, combining classical computer vision with optical-flow-based
                             methods.</li>
                     </ul>
-                </div>
-            </div>
-
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div>
-                        <span class="exp-role">Product Development Engineer</span>
-                        <span class="exp-company"> · InfinitorAB</span>
-                    </div>
-                    <div class="exp-meta">
-                        <span class="exp-date">Aug 2026 — Present</span>
-                        <span class="exp-location">Hybrid · Part-time</span>
-                    </div>
-                </div>
-                <div class="exp-desc">
-                    Contributing to the development of InfinitorAB's autonomous FDM 3D printer, focusing on software and
-                    AI integration, electronics, firmware, and motor control.
                 </div>
             </div>
 
@@ -2563,45 +2563,28 @@
                 </div>
                 </div>
             </div>
-
-            <div class="education-thesis">
-                <div class="skills-label">Thesis &amp; Dissertation</div>
-
-                <div class="project-item">
-                    <div class="project-title">Master's Thesis — Image-Based Analysis and Estimation of Welding Features for Adaptive Control</div>
-                    <div class="project-desc">
-                        <ul>
-                            <li>Investigated image-derived welding features for data-driven estimation of the
-                                physical state of a Pulsed Gas Metal Arc Welding process.</li>
-                            <li>Extracted wire, weld-pool, droplet and spatter features from high-speed video,
-                                synchronized them with electrical measurements, and evaluated soft-sensing models.</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a class="project-link" href="MasterThesisReport.pdf" target="_blank" rel="noopener">↗ Master's thesis report</a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-title">B.Tech. Dissertation — Machine Learning-Enhanced Smart Hand-Wearable for Speech-Impaired Individuals</div>
-                    <div class="project-desc">
-                        <ul>
-                            <li>Developed a five-flex-sensor smart glove for gesture, sign and binary-coded
-                                communication, evaluating multiple classical machine-learning classifiers.</li>
-                        </ul>
-                    </div>
-                    <div class="project-links">
-                        <a class="project-link" href="B.TechDissertationReport.pdf" target="_blank" rel="noopener">↗ Dissertation report</a>
-                        <a class="project-link" href="https://github.com/Dharun235/SHWASI" target="_blank" rel="noopener">↗ GitHub</a>
-                    </div>
-                </div>
-            </div>
-
         </section>
 
         <!-- 05 · PROJECTS -->
         <section class="section" id="projects">
             <h2 class="section-title"><span class="index">05</span> Projects</h2>
+
+            <div class="skills-label project-group">Research</div>
+
+            <div class="project-item">
+                <div class="project-title">Master's Thesis — Image-Based Analysis and Estimation of Welding Features for Adaptive Control</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Investigated image-derived welding features for data-driven estimation of the
+                            physical state of a Pulsed Gas Metal Arc Welding process.</li>
+                        <li>Extracted wire, weld-pool, droplet and spatter features from high-speed video,
+                            synchronized them with electrical measurements, and evaluated soft-sensing models.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="MasterThesisReport.pdf" target="_blank" rel="noopener">↗ Master's thesis report</a>
+                </div>
+            </div>
 
             <div class="project-item">
                 <div class="project-title">GulliView — Vision-Based Localization for Autonomous Vehicles</div>
@@ -2635,6 +2618,37 @@
                     <a class="project-link" href="RobustRLReport.pdf" target="_blank" rel="noopener">↗ Report</a>
                 </div>
             </div>
+
+            <div class="project-item">
+                <div class="project-title">Development and Visual Tracking of Flapping-Wing Micro-Air Vehicles</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Developed and tested voice-coil-driven flapping-wing micro-air vehicles, including control
+                            electronics, measurement devices, and interchangeable wing-hinge configurations.</li>
+                        <li>Implemented camera-based wing tracking using colored-marker segmentation, histogram
+                            analysis, and centroid tracking under varying amplitudes, duty cycles, and hinge designs.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="Report_UAV.pdf" target="_blank" rel="noopener">↗ UAV report</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">B.Tech. Dissertation — Machine Learning-Enhanced Smart Hand-Wearable for Speech-Impaired Individuals</div>
+                <div class="project-desc">
+                    <ul>
+                        <li>Developed a five-flex-sensor smart glove for gesture, sign and binary-coded
+                            communication, evaluating multiple classical machine-learning classifiers.</li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="B.TechDissertationReport.pdf" target="_blank" rel="noopener">↗ Dissertation report</a>
+                    <a class="project-link" href="https://github.com/Dharun235/SHWASI" target="_blank" rel="noopener">↗ GitHub</a>
+                </div>
+            </div>
+
+            <div class="skills-label project-group">Engineering</div>
 
             <div class="project-item">
                 <div class="project-title">Sensor Fusion and Non-Linear Filtering for 3D Object Tracking</div>
@@ -2684,21 +2698,6 @@
                 </div>
                 <div class="project-links">
                     <a class="project-link" href="QuadrotorControlReport.pdf" target="_blank" rel="noopener">↗ Quadrotor report</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-title">Development and Visual Tracking of Flapping-Wing Micro-Air Vehicles</div>
-                <div class="project-desc">
-                    <ul>
-                        <li>Developed and tested voice-coil-driven flapping-wing micro-air vehicles, including control
-                            electronics, measurement devices, and interchangeable wing-hinge configurations.</li>
-                        <li>Implemented camera-based wing tracking using colored-marker segmentation, histogram
-                            analysis, and centroid tracking under varying amplitudes, duty cycles, and hinge designs.</li>
-                    </ul>
-                </div>
-                <div class="project-links">
-                    <a class="project-link" href="Report_UAV.pdf" target="_blank" rel="noopener">↗ UAV report</a>
                 </div>
             </div>
         </section>
